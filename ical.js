@@ -183,7 +183,7 @@ var UUID = require('node-uuid');
   var attachmentParam = function(name){
     return function(val, params, curr){
       var attachment = {
-        url: val,
+        source: val,
       };
 
       for (var i = 0; i < params.length; i++) {
