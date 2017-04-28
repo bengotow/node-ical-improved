@@ -1,6 +1,6 @@
 {
-  "name": "node-ical",
-  "version": "0.5.4",
+  "name": "node-ical-improved",
+  "version": "0.5.9",
   "main": "index.js",
   "description": "A minimal icalendar/ics parser for nodejs",
   "keywords": [
@@ -9,11 +9,11 @@
     "calendar",
     "nodejs"
   ],
-  "homepage": "https://github.com/jens-maus/node-ical",
-  "author": "Jens Maus <mail@jens-maus.de>",
+  "homepage": "https://github.com/Hardsix/node-ical-improved",
+  "author": "Jens Maus <mail@jens-maus.de> Tomislav Bradaric <the.tomislav.bradaric@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jens-maus/node-ical.git"
+    "url": "git@github.com:Hardsix/node-ical-improved.git"
   },
   "dependencies": {
     "request": "2.75.0",
