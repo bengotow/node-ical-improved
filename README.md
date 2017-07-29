@@ -12,9 +12,9 @@ module, however, primarily targets nodejs use which should allow to parse icalen
 way.
 
 ## Install
-node-ical is availble on npm:
+node-ical-improved is availble on npm:
 
-    npm install node-ical
+    npm install node-ical-improved
 
 ## API
 ```js
@@ -36,7 +36,7 @@ Use the request library to fetch the specified URL (```opts``` gets passed on to
 
 ## Example 1 - Print list of upcoming node conferences (see example.js)
 ```js
-var ical = require('node-ical');
+var ical = require('node-ical-improved');
 var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 ical.fromURL('http://lanyrd.com/topics/nodejs/nodejs.ics', {}, function(err, data) {
