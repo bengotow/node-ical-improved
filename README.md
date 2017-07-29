@@ -1,5 +1,5 @@
 # node-ical
-[![Build Status](https://travis-ci.org/jens-maus/node-ical.png)](https://travis-ci.org/jens-maus/node-ical)
+[![Build Status](https://travis-ci.org/yyolk/node-ical-improved.png)](https://travis-ci.org/yyolk/node-ical-improved)
 [![NPM version](http://img.shields.io/npm/v/node-ical.svg)](https://www.npmjs.com/package/node-ical)
 [![Downloads](https://img.shields.io/npm/dm/node-ical.svg)](https://www.npmjs.com/package/node-ical)
 
