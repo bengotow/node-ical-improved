@@ -4,4 +4,5 @@ node_js:
     - "0.12"
     - "4.2"
     - "6"
+    - "6.10" #node 6.10 on aws lambda
 install: npm install 
