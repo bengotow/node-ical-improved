@@ -128,14 +128,18 @@ var UUID = require('node-uuid');
       var comps = /^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})(Z)?$/.exec(val);
       if (comps !== null) {
         if (comps[7] == 'Z'){ // GMT
-          newDate = new Date(Date.UTC(
-            parseInt(comps[1], 10),
-            parseInt(comps[2], 10)-1,
-            parseInt(comps[3], 10),
-            parseInt(comps[4], 10),
-            parseInt(comps[5], 10),
-            parseInt(comps[6], 10 )
-          ));
+          //newDate = new Date(Date.UTC(
+          //  parseInt(comps[1], 10),
+          //  parseInt(comps[2], 10)-1,
+          //  parseInt(comps[3], 10),
+          //  parseInt(comps[4], 10),
+          //  parseInt(comps[5], 10),
+          //  parseInt(comps[6], 10 )
+          //));
+            //
+            //see: https://github.com/peterbraden/ical.js/issues/68`
+          newDate = require('moment-timezone').tz(val.toString(), (parseParams(params).TZID || '')).tz("UTC").toDate();
+            console.log('new date is',newDate);
           // TODO add tz
         } else {
           newDate = new Date(

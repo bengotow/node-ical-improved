@@ -16,9 +16,10 @@
     "url": "git@github.com:Hardsix/node-ical-improved.git"
   },
   "dependencies": {
+    "moment-timezone": "^0.5.13",
+    "node-uuid": "^1.4.1",
     "request": "2.75.0",
-    "rrule": "2.1.0",
-    "node-uuid": "^1.4.1"
+    "rrule": "2.1.0"
   },
   "devDependencies": {
     "vows": "0.7.0",
