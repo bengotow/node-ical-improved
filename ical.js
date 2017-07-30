@@ -139,7 +139,6 @@ var UUID = require('node-uuid');
             //
             //see: https://github.com/peterbraden/ical.js/issues/68`
           newDate = require('moment-timezone').tz(val.toString(), (parseParams(params).TZID || '')).tz("UTC").toDate();
-            console.log('new date is',newDate);
           // TODO add tz
         } else {
           newDate = new Date(
